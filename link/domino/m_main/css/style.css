@@ -1,0 +1,434 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-size:14px;
+    font-family:"돋움", sans-serif;
+    color:#454545;
+}
+
+ul {
+    list-style:none;
+}
+
+a:link {text-decoration:none; color:#454545;}
+a:visited {text-decoration:none; color:#454545;}
+a:hover {text-decoration:none; color:red;}
+a:active {text-decoration:none; color:red;}
+
+
+img {
+    border:0;
+}
+
+address{
+    font-style:normal;
+}
+
+.t {
+    display:none;
+}
+
+
+
+header {
+    width:100%;
+    height:70px;
+    background:#c4e9fa;
+    
+}
+
+
+header h1 {
+    width:53px;
+    margin:0 auto;
+    padding-top:5px;
+   
+}
+
+
+header h1 a {
+    background:url(../images/logo.png) no-repeat;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    display:block;
+    height:52px;
+}
+
+
+header img {
+    float:left;
+    margin:20px;
+    cursor:pointer;
+}
+
+
+#main_img {
+    width:100%;
+    height:250px;
+}
+
+#menu {
+    width:100%;
+    height:430px;
+}
+
+
+#menu ul li {
+   
+    width:50%;
+    float:left;
+
+}
+
+#menu ul li img {
+    display:block;
+    height:160px;
+    margin:0 auto;
+}
+
+#menu ul li:nth-child(3) {
+    
+    border-top:1px solid silver; 
+    margin-top:-1px;
+    padding-top:10px
+    
+}
+
+#menu ul li:nth-child(1) {
+    
+    border-right:1px solid silver;
+    
+    
+}
+
+#menu ul li:nth-child(2) {
+    
+    border-bottom:1px solid silver; 
+    
+}
+
+#menu ul li:nth-child(4) {
+    
+    border-left:1px solid silver;
+    margin-left:-1px;
+    padding-top:10px
+    
+}
+
+
+
+#menu #btn {
+    border:2px solid #0d608a;
+   
+    width:134px;
+    height:37px;
+    color:#0d608a;
+    font-weight:bold;
+    text-align:center;
+    line-height:37px;
+    cursor:pointer;
+    margin:0 auto;
+}
+
+#btn_wrap {
+     float:left;
+    width:100%;
+    padding-top:30px;
+}
+
+#sub_img_wrap {
+    width:100%;
+    height:148px;
+}
+
+#icon {
+    width:100%;
+    height:455px;
+}
+
+#icon > ul > li {
+    height:155px;
+    position:relative;
+	line-height:15;
+}
+
+#icon > ul > li i01 {
+	text-align:left;
+}
+
+
+#icon > ul > li:nth-child(2) {
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+
+
+
+
+
+
+footer {
+    width:100%;
+    height:104px;
+    background:#c4e9fa;
+}
+
+address #order {
+    font-size:20px;
+    color:#084a6e;
+    font-weight:bold;
+    margin:0 auto;
+    width:222px;
+}
+
+address #order img {
+    width:8%;
+}
+
+
+address #address {
+    font-size:10px;
+    text-align:center;
+    padding-top:20px;
+    
+}
+
+
+#pc {
+    background:#1078b0;
+    width:100%;
+    height:70px;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    line-height:70px;
+    cursor:pointer;
+}
+
+
+/*메인 이미지 롤링*/
+
+#testDiv {
+  width: 100%;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+#testDiv ul > li {
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+ 
+}
+
+.viSimpleSlider ul > li img, #testDiv ul > li img {
+  width: 100%;
+  height: auto;
+}
+
+.viSimpleSlider ul > li .slideTo, #testDiv ul > li .slideTo {
+  background-color: #222;
+  color: #fff;
+}
+
+.viSimpleSlider ul > li .slideTo.active, #testDiv ul > li .slideTo.active {
+  background-color: green;
+}
+
+.viSimpleSlider ul > li .slideTo > div, #testDiv ul > li .slideTo > div {
+  font-size: 14px;
+  margin-top: -20px;
+}
+
+.viSimpleSlider ul > li .slideTo > img, #testDiv ul > li .slideTo > img {
+  vertical-align: top;
+}
+
+.viSimpleSlider ul > li span.indexNumber, #testDiv ul > li span.indexNumber {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  left: 80px;
+  top: 200px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.viSimpleSlider .indicate, #testDiv .indicate {
+  width: 100%;
+  bottom: 10px;
+  z-index: 120;
+  text-align: center;
+}
+
+.viSimpleSlider .indicate > a, #testDiv .indicate > a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.viSimpleSlider .indicate > a.active, #testDiv .indicate > a.active {
+  background-color: #eb0a1e;
+}
+
+.viSimpleSlider .indicate:after, #testDiv .indicate:after {
+  display: block;
+  visibility: hidden;
+  content: ".";
+  clear: both;
+  text-indent: -9999px;
+  height: 0;
+}
+
+
+/*//메인 이미지 롤링*/
+
+
+
+/*햄버거 메뉴 누를때 나오는 메뉴 css*/
+
+
+
+#header {
+    width:300px;
+    height:70px;
+    background:#09a1e6;
+    color:#fff;
+    font-weight:bold;
+}
+
+#header img {
+    margin:10px;
+}
+
+#header span {
+    font-size:16px;
+    vertical-align:28px;
+}
+
+#ok01 {
+    width:300px;
+    height:85px;
+    background:#fff;
+}
+
+#ok01 #b_loge {
+    border:2px solid #085679;
+    width:120px;
+    height:43px;
+    color:#085679;
+    text-align:center;
+    line-height:43px;
+    font-weight:bold;
+    float:left;
+    margin:20px 20px;
+}
+
+#ok01 #b_order {
+    border:2px solid #085679;
+    width:120px;
+    height:43px;
+    color:#085679;
+    text-align:center;
+    line-height:43px;
+    font-weight:bold;
+    float:left;
+    margin:20px 5px;
+}
+
+
+#cont01 {
+    
+    background:#09a1e6;
+    width:300px;
+}
+
+#cont01 ul li {
+    border-bottom:1px solid silver;
+    border-bottom-style:dashed;
+    height:50px;
+    line-height:50px;
+    width:290px;
+    margin:0 auto
+    
+}
+
+#cont01 ul li:last-child {
+    border:0;
+}
+
+#cont01 ul li a {
+    color:#fff;
+    margin-left:10px;
+}
+
+#cont01 ul li span {
+    float:right;
+    margin-right:20px;
+}
+
+#ok02 {
+    width:300px;
+    height:950px;
+    overflow:hidden;
+    padding-left:10px;
+    background:#fff;
+}
+
+#ok02 .v01 {
+    border:2px solid #085679;
+    width:120px;
+    height:43px;
+    color:#085679;
+    text-align:center;
+    line-height:43px;
+    font-weight:bold;
+    float:left;
+    margin:10px;
+
+}
+
+#modar {
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+    display:none;
+}
+
+.cl {
+    position:fixed;
+    top:0;
+    left:300px;
+    cursor:pointer;
+}
+
+#modar.active {
+    display:block;
+}
+
+/*//햄버거 메뉴 누를때 나오는 메뉴*/
+
+
+
+
+
+
+
