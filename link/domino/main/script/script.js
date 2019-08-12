@@ -32,12 +32,15 @@ $(function(){
   $(document).ready(function(){
       $('.slider').bxSlider({
           auto: true,
+          minSlides: 1,
           maxSlides: 4,
-          mvoeSlides:1,
+          moveSlides:1,
           speed: 500,
           controls : false,
           pager:false,
-          slideWidth: "320"
+          slideWidth: "380",
+          slideMargin:'10',
+          touchEnabled: true
       });
     });
     
