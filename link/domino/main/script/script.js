@@ -25,28 +25,22 @@ $(function(){
 		mobileSwipe : true,
             desktopSwipe : true
         });
-    
-    $(window).load(function() {
-    
-    
-    $("#flexiselDemo3").flexisel({
-            visibleItems: 4,
-            itemsToScroll: 1,         
-            autoPlay: {
-                enable: true,
-                interval: 5000,
-                pauseOnHover: true
-            }        
-        });
-    
-   
-    });
-    
-      
-    
-    
+
 
 });
+
+  $(document).ready(function(){
+      $('.slider').bxSlider({
+          auto: true,
+          maxSlides: 4,
+          mvoeSlides:1,
+          speed: 500,
+          controls : false,
+          pager:false,
+          slideWidth: "320"
+      });
+    });
+    
 
     
   
