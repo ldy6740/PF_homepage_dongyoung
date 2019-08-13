@@ -571,15 +571,23 @@ footer address sapn {
     
     
     h1 a {
-        background:url("../images/m_logo.png") no-repeat;
-        height:36px;
-        display:block;
+        background:none;
+        
     }    
     
+    
+    #nav_werp::before {
+        content:"";
+        background:url("../images/m_logo.png")
+        display:block;
+        position:absolute;
+        transform:translate(50%, -53.3px);
+    }
     
      #nav_werp {
         border-top:2px solid #de2e46;
         border-bottom:0;
+        
     }
     
     #nav_werp > .inner > nav {
