@@ -478,8 +478,13 @@ footer address sapn {
        width:100%;
         background-size:contain;
         background:url("../images/bn_img.jpg") no-repeat center;
-        
+        background-position: left;
     }
+    
+    .img_01_countUp {padding-top:100px;}
+    .img_01_countUp h3 {font-size:20px;}
+    .img_01_countUp #waypoint1 #number,
+    .img_01_countUp #waypoint1 p { font-size:40px;}
     
     #bn_02 {
         height:580px;
@@ -542,6 +547,7 @@ footer address sapn {
         font-weight:800;
     }
     
+
   
 }
 
@@ -630,7 +636,15 @@ footer address sapn {
     #bn_01 {
        width:100%;
         background-size:cover;
+        background-position: right;
     }
+    
+     .img_01_countUp {padding-top:220px; padding-left:90px; width:320px; text-align:left;}
+    .img_01_countUp h3 {font-size:10px;}
+    .img_01_countUp #waypoint1 #number,
+    .img_01_countUp #waypoint1 p { font-size:30px;}
+    .img_01_countUp h4 {font-size:10px}
+    .img_01_countUp h4:nth-child(3) {padding-top:10px;}
     
     #bn_02 {
         width:100%;
