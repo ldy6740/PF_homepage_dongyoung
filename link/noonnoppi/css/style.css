@@ -371,9 +371,10 @@ nav > ul > li > a {
 .img_01_countUp #waypoint1 #number {font-size:50px; display:inline;}
 .img_01_countUp #waypoint1 p {font-size:50px; display:inline; padding-left:10px;}
 .img_01_countUp h4 {font-size:25px; font-weight:400;}
-.img_01_countUp h4 span {font-size:30px; font-weight:200; color:#de2e46; }
-.img_01_countUp h4:nth-child(1) span {border:1px solid red;}
-
+.img_01_countUp h4 span {font-size:30px; font-weight:600; color:#de2e46; }
+.img_01_countUp h4:nth-child(3) {padding-top:40px;}
+.img_01_countUp h4:nth-child(3) span {padding-right:10px;}
+.img_01_countUp h4:nth-child(4) span {padding-left:10px;}
 /*//contents*/
 
 
