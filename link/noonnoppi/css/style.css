@@ -578,14 +578,19 @@ footer address sapn {
     
     #nav_werp::before {
         content:"";
-        background:url("../images/m_logo.png")
+        background:url("../images/m_logo.png")no-repeat;
+        background-size:contain;
         display:block;
+        width:100px;
+        height:50px;
         position:absolute;
-        transform:translate(50%, -53.3px);
+        left:50%;
+        top:0;
+        transform:translate(-50%, 87px);
     }
     
      #nav_werp {
-        border-top:2px solid #de2e46;
+        border-top:1px solid #de2e46;
         border-bottom:0;
         
     }
