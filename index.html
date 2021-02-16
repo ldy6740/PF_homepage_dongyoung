@@ -16,51 +16,131 @@
     
     <title>DY_PortFolio</title>
 </head>
+
 <body>
     <header>
         <div class="bg_img">
             <nav class="topNavBar">
-                <h1 class="logo"><a href="#"><img src="images/Logo.png" alt="topLogo"></a></h1>
-
-                <ul class="list_box">
-                    <li class="nav_list"><a href="javascript:void(0);" onclick="fnMove('#PJ_box')">PROJECT</a></li>
-                    <li class="nav_list"><a href="javascript:void(0);" onclick="fnMove('#about')">ABOUT ME</a></li>
-                    <li class="nav_list"><a href="javascript:void(0);" onclick="fnMove('#Hobby')">HOBBY</a></li>
-                </ul>
+                <div class="inner">
+                	<h1 class="logo"><a href="#"><img src="images/Logo.png" alt="topLogo"></a></h1>
+	
+	                <ul class="list_box">
+	                    <li class="nav_list"><a href="javascript:void(0);" onclick="fnMove('#PJ_box')">PROJECT</a></li>
+	                    <li class="nav_list"><a href="javascript:void(0);" onclick="fnMove('#about')">ABOUT ME</a></li>
+	                    <li class="nav_list"><a href="javascript:void(0);" onclick="fnMove('#Hobby')">HOBBY</a></li>
+	                </ul>
+                </div>
             </nav>
 
             <div class="main_titleBox">
-                <ul class="title_list">
-                    <li class="title_1">DONG YOUNG</li>
-                    <li class="title_2">PortFolio HomePage</li>
-                    <li class="title_3">
-                        Thank you for visiting Portfolio homepage. We <br> 
-                        have created a single page that makes it easy <br> 
-                        to view your project.
-                    </li>
-                </ul>
+                <div class="inner">
+                	<ul class="title_list">
+	                    <li class="title_1">DONG YOUNG</li>
+	                    <li class="title_2">PROJECT HOME</li>
+	                    <li class="title_3">
+	                        Thank you for visiting Portfolio homepage  <br> 
+	                        We have created a single page that makes it easy to view <br> 
+	                        your project.
+	                    </li>
+	                </ul>
+                </div>
             </div>
         </div>
     </header>
 
+	<section class="project_box" id="PJ_box">
+		<div class="inner">
+			<div class="project_title">
+				<p><span>WEB</span>Project</p>
+				
+				<div class="rolling_box" >
+					<ul>
+						<li data-scroll="toggle(.fromBottomIn)">
+							
+							<div class="figure_box">
+								<figure>
+									<img src="images/Kyungbok.png" alt="kyungbok">
+									<figcaption>
+										<div class="info">
+											<h3>KYOUNG BOK UNIVERSITY</h3>
+											<a href="link/kb/index.html">경복대학교 홈페이지 이동</a>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+							
+						</li>
+						<li data-scroll="toggle(.fromBottomIn)">
+						
+							 <div class="figure_box">
+								<figure>
+									<img src="images/project02.png" alt="project">
+									<figcaption>
+										<div class="info">
+											<h3>NOON NOP PI</h3>
+											<a href="link/noonnoppi/index.html">눈높이교육 반응형 홈페이지 이동</a>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+						
+						</li>
+						<li data-scroll="toggle(.fromBottomIn)">
+						
+							 <div class="figure_box">
+								<figure>
+									<img src="images/Domino.png" alt="domino">
+									<figcaption>
+										<div class="info">
+											<h3>DOMINO PIZZA</h3>
+											
+											<a href="link/domino/main/index.html">도미노피자 PC 버전 이동</a><br>
+									
+											<a href="link/domino/m_main/index.html">도미노피자 mobile 버전 이동</a>
+												
+											</ul>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+						
+						</li>
+						
+					</ul>         
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
     <section class="contents_box" id="about">
         <div class="aility_box">
-            <ul>
-                <li class="skill_list">HTML/CSS</li>
-                <li class="skill_list">JAVA SCRIPT</li>
-                <li class="skill_list">JQUERY</li>
-                <li class="skill_list">Ps/Ai</li>
-            </ul>
+			<div class="inner">
+	
+				<!-- 600 * 499 -->
+	            <!-- <ul>
+	                <li class="skill_list">HTML/CSS</li>
+	                <li class="skill_list">JAVASCRIPT&nbsp;/&nbsp;JQUERY</li>
+	                <li class="skill_list">PhotoShop&nbsp;/&nbsp;Illustraor</li>
+					<li class="skill_list">JAVA</li>
+					<li class="skill_list">ORACLE</li>
+	            </ul> -->
+	
+				<ul class="img_box">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
         </div>
-
-        <p class="line_blue">DONG YOUNG</p>
         
-        <div class="grid_warp">
+        <!-- <div class="grid_warp">
             <div class="img_grid_box">
 
                 <div class="img_box_01" >
 
-                    <img src="images/chef.jpg" style="width:27%" alt="ched_img" data-scroll="toggle(.fromLeftIn, .fromLeftOut) once">
+                    <img src="images/chef.jpg" alt="ched_img" data-scroll="toggle(.fromLeftIn, .fromLeftOut) once">
                     
                     <img src="images/coding.jpg" alt="dy_img" data-scroll="toggle(.fromRightIn, .fromRightOut) once">
                     
@@ -70,77 +150,16 @@
                         분야에서 도전하는 정신과 협력하는 마음을 가지고<br>
                         함께 성장하는 모습을 행동으로 보여드리겠습니다.
                         </p>
-
-                        <p>MORE</p>
                     </div>
 
                 </div>
                 
             </div>
-        </div>
+        </div> -->
         
     </section>
-    <section class="project_box" id="PJ_box">
-        <div class="project_title">
-            <p><span>WEB</span>Project</p>
-            
-            <div class="rolling_box" >
-                <ul>
-                    <li data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                        
-                        <div class="figure_box">
-                            <figure>
-                                <img src="images/Kyungbok.png" alt="kyungbok">
-                                <figcaption>
-                                    <div class="info">
-                                        <h3>KYOUNG BOK UNIVERSITY</h3>
-                                        <a href="link/kb/index.html">경복대학교 홈페이지 들어가기</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        
-                    </li>
-                    <li data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                    
-                         <div class="figure_box">
-                            <figure>
-                                <img src="images/project02.png" alt="project">
-                                <figcaption>
-                                    <div class="info">
-                                        <h3>NOON NOP PI</h3>
-                                        <a href="link/noonnoppi/index.html">눈높이교육 반응형 홈페이지 들어가기</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    
-                    </li>
-                    <li data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                    
-                         <div class="figure_box">
-                            <figure>
-                                <img src="images/Domino.png" alt="domino">
-                                <figcaption>
-                                    <div class="info">
-                                        <h3>DOMINO PIZZA</h3>
-                                        <a href="link/domino/main/index.html">도미노피자 PC 버전</a><br>
-                                        <a href="link/domino/m_main/index.html">도미노피자
-                                        mobile 버전</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    
-                    </li>
-                    
-                </ul>         
-                
-            </div>
-            <p>PROJECT ALL</p>
-        </div>
-    </section>
-    <section class="hobby" id="Hobby">
+
+    <!-- <section class="hobby" id="Hobby">
         <div class="hobby_box">
             <div class="hobby_text">
                 <ul>
@@ -192,27 +211,29 @@
         <div class="last_text">
             <h3> Resolution </h3>
             <p>
-                주방에서 여러 사랍이 효울적으로 일 하기 위해서 가장 필요한 것은
+                주방에서 여러 사람이 효울적으로 일 하기 위해서 가장 필요한 것은
                 동료들과 소통하고 혐력하는 것 입니다. 주방에서 일한 시간동안 배운 소통과 협력의<br>
                 중요함을 알고, 말과 행동이 일치하는 <span>"언행일치"</span> 하는 신입사원이 되겠습니다.
             </p>
         </div>
-    </section>
+    </section> -->
     <footer>
-        <div class="footer_logo"><a href="#"><img src="images/footerLogo.png" alt="footer_logo"></a></div>
-        <address>
-            <ul>
-                <li>TEL. 010 5009 1794</li>
-                <li>ADDRESS. 서울 관악구 낙성대동 1598-36번지 101호</li>
-                <li>E-mail. ldy6740@naver.com</li>
-            </ul>
-        </address>
-        <div class="footer_snsIcon">
-            <ul>
-                <li><a href="#"><img src="images/tumblr.png" alt="tumblr"></a></li>
-                <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
-                <li><a href="#"><img src="images/vimeo.png" alt="vimeo"></a></li>
-            </ul>
+        <div class="inner">
+        	<div class="footer_logo"><a href="#"><img src="images/Logo.png" alt="footer_logo"></a></div>
+	        <address>
+	            <ul>
+	                <li>TEL. 010 5009 1794</li>
+	                <li>ADDRESS. 서울 관악구 낙성대동 1598-36번지 101호</li>
+	                <li>E-mail. ldy6740@naver.com</li>
+	            </ul>
+	        </address>
+	        <div class="footer_snsIcon">
+	            <ul>
+	                <li><a href="#"><img src="images/tumblr.png" alt="tumblr"></a></li>
+	                <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+	                <li><a href="#"><img src="images/vimeo.png" alt="vimeo"></a></li>
+	            </ul>
+	        </div>
         </div>
     </footer>
     

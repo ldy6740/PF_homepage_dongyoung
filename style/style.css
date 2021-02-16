@@ -1,73 +1,4 @@
-@font-face {
-    font-family: palatino;
-    src: url(f'../fonts/palatino.woff') format("woff");
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/poppins-v8-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Poppins Regular'), local('Poppins-Regular'),
-       url('../fonts/poppins-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/poppins-v8-latin/poppins-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/poppins-v8-latin/poppins-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/poppins-v8-latin/poppins-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/poppins-v8-latin/poppins-v8-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'League Script';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/League Spartan Regular/League Spartan Regular.eot'); /* IE9 Compat Modes */
-  src: local('League Script'), local('LeagueScript'),
-       url('../fonts/League Spartan Regular/League Spartan Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/League Spartan Regular/League Spartan Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/League Spartan Regular/League Spartan Regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/League Spartan Regular/League Spartan Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/League Spartan Regular/League Spartan Regular.svg#LeagueScript') format('svg'); /* Legacy iOS */
-}
-
-
-@font-face {
-font-family: 'NotoKrL';
-font-style: normal;
-font-weight: 100;
-src:local('Noto Sans Light'), local('NotoSans-Light'), 
-    url(/fonts/NotoSans-subset-master/NotoSans-Light.eot);
-src:url(/fonts/NotoSans-subset-master/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
-    url(/fonts/NotoSans-subset-master/NotoSans-Light.woff2) format('woff2'),
-    url(/fonts/NotoSans-subset-master/NotoSans-Light.woff) format('woff');;
-}
-@font-face {
-font-family: 'NotoKrR';
-font-style: normal;
-font-weight: 300;
-src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(/fonts/NotoSans-subset-master/NotoSans-Regular.eot);
-src: url(/fonts/NotoSans-subset-master/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
-url(/fonts/NotoSans-subset-master/NotoSans-Regular.woff2) format('woff2'),
-url(/fonts/NotoSans-subset-master/NotoSans-Regular.woff) format('woff');
-}
-@font-face {
-font-family: 'NotoKrM';
-font-style: normal;
-font-weight: 500;
-src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(/fonts/NotoSans-subset-master/NotoSans-Medium.eot);
-src: url(/fonts/NotoSans-subset-master/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
-url(/fonts/NotoSans-subset-master/NotoSans-Medium.woff2) format('woff2'),
-url(/fonts/NotoSans-subset-master/NotoSans-Medium.woff) format('woff');
-}
-@font-face {
-font-family: 'NotoKrB';
-font-style: normal;
-font-weight: 700;
-src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(/fonts/NotoSans-subset-master/NotoSans-Bold.eot);
-src: url(/fonts/NotoSans-subset-master/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
-url(/fonts/NotoSans-subset-master/NotoSans-Bold.woff2) format('woff2'),
-url(/fonts/NotoSans-subset-master/NotoSans-Bold.woff) format('woff');
-}
-
+@import url(fontFace.css);
 
 /*간단한 초기화*/
 ul { list-style: none; }
@@ -78,38 +9,37 @@ a:link, a:visited, a:hover { text-decoration: none; color:#fff;}
 
 
 header {
-    background:url(../images/mainBg.jpg)no-repeat;
+    background:url()no-repeat;
     background-size: cover;
-    height:100rem;
-    box-shadow:2px 2px 10px rgba(0,0,0,.4);
+	background-color:#1c5d9a;
+    height:30em;
+	margin-bottom: 50px;
 }
 
-.bg_img { padding:2rem; }
-html { font-size:62.5%;}
+
+.inner {width:1200px; margin:0 auto;}
 
 /*nav*/
-.topNavBar { display:flex; padding:0 10rem}
-.topNavBar .logo {}
-.topNavBar .list_box { display:flex; color:#fff; flex-basis: 100%; flex-direction: row-reverse;}
-.list_box li { margin:30px 20px; letter-spacing: 5px; font-size:13px; font-family:NotoKrL, sans-serif; height:20px; width:8%; text-align:center; line-height:20px; transition:all 1s; cursor: pointer;}
-.list_box li:nth-child(1) {order: 3;}
-.list_box li:nth-child(2) {order: 2;}
-.list_box li:nth-child(3) {order: 1;}
+.topNavBar {overflow:hidden; padding: 10px 0;}
+.topNavBar .logo {display:inline-block;}
+.topNavBar .list_box {margin-top:50px; float:right;}
+.list_box li {float:left; font-size:18px; font-family:'NotoKrM', sans-serif; text-align:center; line-height:20px; transition:all .5s; cursor: pointer; width:150px; padding: 0 20px;}
+.list_box li:after {content:""; display:block; width:100%; height:0; background:#5da8ef; margin-top:-8px;}
+.list_box li:hover:after {content:""; display:block; width:100%; height:10px; transition:all .5s;}
 
-.list_box li:hover { background:#5da8ef; height:10px; transition:all 1s;}
 /*title*/
-.main_titleBox { padding:15rem;}
-.main_titleBox .title_1 { font-size:10px; letter-spacing: 2px; color:#5da8ef; padding-bottom: 20px; font-family:League Script, sans-serif;}
-.main_titleBox .title_2 { font-size:62px; padding-bottom:20px; font-family:Palatino, sans-serif; color:#fff;}
-.main_titleBox .title_3 { font-size:14px; color:#ededed; line-height:24px; letter-spacing:1px; font-family:Poppins, sans-serif; }
+.main_titleBox { padding:50px 0; text-align:center;}
+.main_titleBox .title_1 { font-size:25px; color:#5da8ef; font-family:'NotoKrB', sans-serif;}
+.main_titleBox .title_2 { font-size:50px; padding-bottom:40px; font-family:'NotoKrM', sans-serif; color:#fff; line-height:50px; display:inline-block;}
+.main_titleBox .title_3 { font-size:16px; color:#ededed; line-height:27px; font-family:'NotoKrM', sans-serif; }
 
 /*section*/
 .contents_box { width:90%; margin:0 auto;}
-.contents_box::before { content:"PORT FOLIO"; display:block; word-wrap: break-word; text-align:center; line-height:20px; width:5px; float:right; color:#ddd; margin-top:200px;}
+.contents_box::before { content:"PORT FOLIO"; display:block; word-wrap: break-word; text-align:center; line-height:20px; width:5px; float:right; color:#ddd;}
 .aility_box { padding:6rem 0; position: relative;}
-.aility_box ul { display:flex; padding:0 20rem; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
-.aility_box ul li { width:120px; height:36px; text-align:center; line-height: 36px; background:#5da8ef; border-radius:18px; color:#fff; margin:0 6px; font-family:palatino, sans-serif; cursor:pointer; transition:all 1s;}
-.aility_box ul li:hover {background:#1c5d9a; transition:all 1s;}
+/* .aility_box ul { display:flex; padding:0 20rem; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
+.aility_box ul li {padding:0 20px; height:36px; text-align:center; line-height: 36px; background:#5da8ef; border-radius:18px; color:#fff; margin:0 6px; font-family:NotoKrM, sans-serif; transition:all 1s;}
+.aility_box ul li:hover {background:#1c5d9a; transition:all 1s;} */
 
 .line_blue { font-size:.5rem; font-weight:200; color:#333; letter-spacing:2px; text-align:center; font-family:League Script, sans-serif;}
 .line_blue::after {display:block; content:""; width:1px; background:#5da8ef; height:100px; margin:56px auto}
@@ -117,27 +47,22 @@ html { font-size:62.5%;}
 /*abot*/
 .grid_warp { margin-bottom:20rem; }
 .grid_warp .img_box_01 { text-align:center; }
-.grid_warp .img_box_01 img {vertical-align: top; width:35%;}
-.grid_warp .img_box_01 img:nth-child(2) { margin-top:46px; margin-left:-50px;}
+.grid_warp .img_box_01 img {vertical-align:top; width:35%;}
 
-.img_grid_box .img_text { text-align:left; margin: -5.5% 60% 1% 20%; font-family:NotoKrR, sans-serif;}
+.img_grid_box .img_text { text-align:left; font-family:NotoKrR, sans-serif;}
 .img_grid_box .img_text p { font-size:1.5rem; }
 .img_grid_box .img_text p:nth-child(2) { margin-top:40px; letter-spacing: 2px; font-size:1rem; font-weight:600; font-family:League Script, sans-serif;} 
 .img_grid_box .img_text p:nth-child(2)::after {display:block; content:""; width:40px; height:1px; background:#5da8ef; }
 
 /*project*/
-.project_title { }
 .project_title p:nth-child(1) {  text-align:center; font-size:42px; font-family:Poppins, sans-serif; font-weight:bold;}
 .project_title p:nth-child(1) span { display:block; letter-spacing: 2px; font-size:9px; color:#5da8ef; font-weight:500; padding-bottom:18px;} 
 .project_title p:nth-child(3) { text-align:center; font-size:1rem; letter-spacing: 2px; width:97px; margin:0 auto; font-family:League Script, sans-serif;}
 .project_title p:nth-child(3)::after { display:block; content:""; background:#5da8ef; width:95px; height:1px; margin-top:5px; }
 .rolling_box { margin-bottom:5rem; }
 .rolling_box ul{ text-align:center; padding-top:50px; }
-.rolling_box ul li { display:inline-block; margin:0 5rem; }
+.rolling_box ul li { display:inline-block; margin:0 2rem; }
 
-.rolling_box ul li:nth-child(1) {transition:transform 1.0s ease, opacity 1.0s ease}
-.rolling_box ul li:nth-child(2) {transition:transform 2.0s ease, opacity 2.0s ease}
-.rolling_box ul li:nth-child(3) {transition:transform 3.0s ease, opacity 3.0s ease}
 
 
 /*hobby*/
@@ -171,7 +96,7 @@ html { font-size:62.5%;}
 .last_text p span { font-weight:900; color:#000;}
 
 /*footer*/
-footer { text-align:center; padding:5% 0;}
+footer { text-align:center; padding:5% 0; background:#1c5d9a; color:#fff;}
 footer address { letter-spacing: 2px; padding:2rem 0; font-family:Poppins, sans-serif;}
 .footer_snsIcon ul {display: flex; margin:0 46%;}
 .footer_snsIcon ul li { width:33.3%; }
@@ -180,20 +105,30 @@ footer address { letter-spacing: 2px; padding:2rem 0; font-family:Poppins, sans-
 
 .figure_box figure { position:relative; width:300px;}
 .figure_box figure figcaption { position:absolute; bottom:0; width:100%; background:#000; opacity:0; height:0px; color:#fff; font-size:1.2rem; transition:all 1s; text-align:left;}
+
+.figure_box figure figcaption .info {position:absolute; bottom:20px; display:inline-block; width:100%;}
+.figure_box figure figcaption .info h3 {font-size:20px;}
+.figure_box figure figcaption .info a {display:inline-block; margin-top:20px;}
+
 .figure_box figure figcaption .info a:link,
 .figure_box figure figcaption .info a:visited,
 .figure_box figure figcaption .info a:hover {
     text-decoration: none; color:#fff;
 }
 
-.figure_box figure:hover figcaption {opacity:.8; height:80px; transition:all 1s;}
+.figure_box figure:hover figcaption {opacity:.8; height:100%; transition:all 1s;}
 
 .figure_box figure figcaption .info {padding:20px;}
 
 
 
 
-
+.img_box {overflow:hidden; border:1px solid red;}
+.img_box li {background:url("/images/icon_box.jpg") no-repeat; width:102px; height:102px; float:left; border:1px solid red; margin: 0 20px;}
+.img_box li:nth-child(1) {background-position: -130px -250px; margin-left:0;}
+.img_box li:nth-child(2) {background-position: -130px -10px;}
+.img_box li:nth-child(3) {background-position: -10px -250px;}
+.img_box li:nth-child(4) {background-position: -10px -370px;}
 
 
 
