@@ -198,33 +198,6 @@
 				</div>
 			</div>
 
-			<script>
-				function RSSChart() {
-
-				var region = $('.regional_step_status .rss_map .rssm_graph svg path');
-				var btn = $('.regional_step_status .rss_map .rssm_graph button');
-				var detail = $('.live_right .rss_detail > div');
-
-				btn.click(function(){
-					var thDataCity = $(this).attr('data-city');
-					btn.removeClass('select');
-					$(this).addClass('select');
-					detail.find('> div').removeClass('open');
-					$('#' + thDataCity).addClass('open');
-					return false;
-				});
-
-				region.click(function(){
-					var thDataCity = $(this).attr('class');
-					btn.removeClass('select');
-					$('.regional_step_status .rss_map .rssm_graph button[data-city="' + thDataCity + '"]').addClass('select');
-					detail.find('> div').removeClass('open');
-					$('#' + thDataCity).addClass('open');
-				});
-				}
-				RSSChart();
-			</script>
-
 			<div class="live_right">
 				<div class="rss_detail">
 					<div>
@@ -346,6 +319,33 @@
 				</div>
 			</div>
 		</div>
+
+		<script>
+			function RSSChart() {
+
+				var region = $('.regional_step_status .rss_map .rssm_graph svg path');
+				var btn = $('.regional_step_status .rss_map .rssm_graph button');
+				var detail = $('.live_right .rss_detail > div');
+
+				btn.click(function(){
+					var thDataCity = $(this).attr('data-city');
+					btn.removeClass('select');
+					$(this).addClass('select');
+					detail.find('> div').removeClass('open');
+					$('#' + thDataCity).addClass('open');
+					return false;
+				});
+
+				region.click(function(){
+					var thDataCity = $(this).attr('class');
+					btn.removeClass('select');
+					$('.regional_step_status .rss_map .rssm_graph button[data-city="' + thDataCity + '"]').addClass('select');
+					detail.find('> div').removeClass('open');
+					$('#' + thDataCity).addClass('open');
+				});
+			}
+			RSSChart();
+		</script>
 	</section>
 	<section class="live_number_container">
 		<div class="inner">
