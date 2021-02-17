@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/style.css">
+	<title>진료소 체크</title>
+</head>
+<body style="background:#fff;">
+	<header style="margin-bottom:0;">
+		<div class="top_head">
+			<div class="inner">
+				<a href="index.html">
+					<img src="images/logo.png" alt="logo">
+				</a>
+
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li class="search_box">
+						<input type="text" id="" class="search_text">
+						<button class="search_btn"><img src="images/search_icon.png" alt="search_icon"></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="inner">
+				<li><a href="#">코로나 바로 알기</a></li>
+				<li><a href="#">뉴스 & 이슈</a></li>
+				<li><a href="#">진료소 체크</a></li>
+				<li><a href="#">커뮤니티</a></li>
+				<li><a href="#">공지사항</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section class="content_title">
+		<div class="title_img">
+			<div class="inner">
+				<p>진료소 체크</p>
+			</div>
+		</div>
+		<div class="home_navigation">
+			<div class="inner">
+				<ul>
+					<li>
+						<img src="images/home_icon.png" alt="home_icon">
+					</li>
+					<li>진료소 체크</li>
+				</ul>
+			</div>
+		</div>
+		<div class="map_select">
+			<div class="inner">
+				<span>
+					<select name="" id="">
+						<option value="시/도">시/도</option>
+					</select>
+				</span>
+				<span>
+					<select name="" id="">
+						<option value="시/군/구">시/군/구</option>
+					</select>
+				</span>
+				<span><button>검색</button></span>
+				<div class="map">
+					<p>검사한 행정구역 내 진료소 표시지도 출력</p>
+					<div>
+						<img src="images/point_icon.png" alt="point_icon">
+						<p>자기위치검색</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search_list_container">
+			<div class="inner">
+				<div class="title">
+					<span>나의 위치와 가까운 진료소</span>
+					<span>
+						<ul>
+							<li>검체채취 가능 진료소</li>
+							<li>평일 (월 ~ 금)</li>
+							<li>토요일</li>
+							<li>일요일/공휴일</li>
+						</ul>
+					</span>
+				</div>
+				<div class="list_title">
+					<ul class="row">
+						<li>번호</li>
+						<li>주소</li>
+						<li>진료소 운영시간</li>
+						<li>전화번호</li>
+						<li>지도</li>
+					</ul>
+				</div>
+				<div class="list_body">
+					<ul>
+						<li>1</li>
+						<li>서울 강남구 언주로 211</li>
+						<li>
+							<span>강남세브란스병원</span>
+							<ul>
+								<li>09:00 ~ 21:00</li>
+								<li>09:00 ~ 12:30</li>
+								<li>미운영</li>
+							</ul>
+						</li>
+						<li>02-1599-6114</li>
+						<li>
+							<button>찾아가기</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+	</section>
+
+	<footer>
+		<div class="inner">
+			<div class="footer_logo">
+				<img src="images/logo.png" alt="logo_icon">
+				<p class="address">
+					<span>문의 전화: 02) 1234-12344</span>
+					<span>서울특별시 종로구 종로78(종로2가) 미려빌딩6층</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
